@@ -1,0 +1,23 @@
+nav{
+    font-family: "Poppins", sans-serif;
+   
+}
+
+
+.bg-azul-claro {
+    background-color: rgba(172, 206, 192, 1);
+}
+
+.bg-azul-medio {
+    background-color: rgba(97, 166, 171, 1);
+}
+
+footer{
+    border-top: 2px rgba(0, 0, 0, 0.185) solid;
+}
+
+
+.carousel-item img{
+    height: 100vh;
+  
+}
