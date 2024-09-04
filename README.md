@@ -19,10 +19,10 @@ Para configurar o ambiente de desenvolvimento:
 
 
 ## Integrantes: 
-Ana Clara Melo de Sousa         | RM559021
-Gustavo Jun Irizawa Ikeda       | RM554718
-Mariana Neugebauer Dourado      | RM550494
-Yasmin Bezerra Sobral           | RM558757
+- **Ana Clara Melo de Sousa**          | RM559021
+- **Gustavo Jun Irizawa Ikeda**        | RM554718
+- **Mariana Neugebauer Dourado**       | RM550494
+- **Yasmin Bezerra Sobral**            | RM558757
 
 ## Links
 
