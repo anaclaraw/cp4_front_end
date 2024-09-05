@@ -1,0 +1,23 @@
+* {
+    font-family: "Poppins", sans-serif; 
+}
+body{
+    background-color: #fff6d7;
+}
+label {
+    font-weight: bold;
+}
+.btn-custom {
+      background-color: #61a6ab; /* Exemplo: Tomate */
+      color: white;
+    }
+.btn-custom:hover {
+      background-color: #accec0; /* Cor ao passar o mouse */
+    }
+
+    
+footer {
+    border-top: 2px rgba(0, 0, 0, 0.185) solid;
+    background-color: #605951;
+}
+
