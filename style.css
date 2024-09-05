@@ -1,0 +1,39 @@
+nav{
+    font-family: "Poppins", sans-serif;
+   
+}
+.font-poppins{
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.bg-azul-claro {
+    background-color: rgba(172, 206, 192, 1);
+}
+
+.bg-azul-medio {
+    background-color: rgba(97, 166, 171, 1);
+}
+
+.bg-bege-medio{
+    background-color:rgba(193, 179, 152, 1);
+}
+
+.bg-bege-claro{
+    background-color:rgba(251, 238, 194, 1);
+}
+
+.bg-marrom{
+    background-color: rgba(96, 89, 81, 1);
+}
+
+.bg-cinza-claro{
+    background-color: rgba(169, 169, 169, 0.505);
+}
+
+footer{
+    margin-top: 15%;
+    border-top: 2px rgba(0, 0, 0, 0.185) solid;
+}
+

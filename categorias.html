@@ -7,8 +7,8 @@
     <title>Categoria de Produtos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="cp4_front_end/css/categorias.css">
-    
+    <link rel="stylesheet" href="/css/categorias.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,50 +17,42 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">X</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
+    <h1 class="bg-marrom m-0 text-center text-light"> YAMG </h1>
+  <header class="sticky-top">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Busca
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/contato.html">Entre em Contato</a></li>
-                        <li><a class="dropdown-item" href="/categorias.html">Categorias</a></li>
-                        
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+  <nav class="navbar navbar-expand-lg bg-marrom sticky-top" data-bs-theme="dark">
 
-                        <li><a class="dropdown-item" href="#">----</a></li>
-                    </ul>
-                </li>
+    <div class="container-fluid ml-2 ">
 
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </header>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/categorias.html">Categorias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos mais vendidos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/detalhes/detalhes2.html">Tecnologia</a></li>
+              <li><a class="dropdown-item" href="/detalhes/detalhes3.html">Casa</a></li>
+              <li><a class="dropdown-item" href="/detalhes/detalhes1.html">Acessórios</a></li>
+              <li><a class="dropdown-item" href="/detalhes/detalhes4.html">Bolsas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contato.html">Contato</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</header>
 
     <div class="container mt-5">
         <div class="row">
@@ -149,7 +141,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="50" data-tipo="bolsas"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="./cp4_front_end/assets/bolsa_sust1.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust1.jpg" class="card-img-top img-fluid"
                                 alt="Bolsa 1">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa NatureNest</h5>
@@ -165,7 +157,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="75" data-tipo="bolsas"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust2.png" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust2.png" class="card-img-top img-fluid"
                                 alt="Bolsa 2">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa EcoFabulous</h5>
@@ -181,7 +173,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="82" data-tipo="bolsas"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust3.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust3.jpeg" class="card-img-top img-fluid"
                                 alt="Bolsa 3">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa EcoTrend</h5>
@@ -197,7 +189,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="296" data-tipo="bolsas"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust4.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust4.jpg" class="card-img-top img-fluid"
                                 alt="Bolsa 4">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa TerraTote</h5>
@@ -213,7 +205,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="185" data-tipo="bolsas"
                         data-marca="Marca E">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust5.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust5.jpg" class="card-img-top img-fluid"
                                 alt="Bolsa 5">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa EcoAura</h5>
@@ -229,7 +221,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="178" data-tipo="bolsas"
                         data-marca="Marca F">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust6.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust6.jpeg" class="card-img-top img-fluid"
                                 alt="Bolsa 6">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa PurePath</h5>
@@ -245,7 +237,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="76" data-tipo="bolsas"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/bolsa_sust7.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/bolsa_sust7.jpeg" class="card-img-top img-fluid"
                                 alt="Bolsa 7">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa GreenGrace</h5>
@@ -261,7 +253,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="124" data-tipo="casa"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa1.jpeg" class="card-img-top img-fluid" alt="Casa 1">
+                            <img src="/assets/casa1.jpeg" class="card-img-top img-fluid" alt="Casa 1">
                             <div class="card-body">
                                 <h5 class="card-title">Lustre harmonia</h5>
                                 <p class="card-text">R$ 124,00</p>
@@ -276,7 +268,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="49" data-tipo="casa"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa2.jpeg" class="card-img-top img-fluid" alt="Casa 2">
+                            <img src="/assets/casa2.jpeg" class="card-img-top img-fluid" alt="Casa 2">
                             <div class="card-body">
                                 <h5 class="card-title">Vaso tesouro tranquilo</h5>
                                 <p class="card-text">R$ 49,00</p>
@@ -291,7 +283,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="234" data-tipo="casa"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa3.jpg" class="card-img-top img-fluid" alt="Casa 3">
+                            <img src="/assets/casa3.jpg" class="card-img-top img-fluid" alt="Casa 3">
                             <div class="card-body">
                                 <h5 class="card-title">Trio de vasos</h5>
                                 <p class="card-text">R$ 234,00</p>
@@ -306,7 +298,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="68" data-tipo="casa"
                         data-marca="Marca E">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa4.jpg" class="card-img-top img-fluid" alt="Casa 4">
+                            <img src="/assets/casa4.jpg" class="card-img-top img-fluid" alt="Casa 4">
                             <div class="card-body">
                                 <h5 class="card-title">Vaso zen</h5>
                                 <p class="card-text">R$ 68,00</p>
@@ -321,7 +313,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="358" data-tipo="casa"
                         data-marca="Marca F">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa5.png" class="card-img-top img-fluid" alt="Casa 5">
+                            <img src="/assets/casa5.png" class="card-img-top img-fluid" alt="Casa 5">
                             <div class="card-body">
                                 <h5 class="card-title">Mesa madeira aconchegante</h5>
                                 <p class="card-text">R$ 358,00</p>
@@ -336,7 +328,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="422" data-tipo="casa"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa7.png" class="card-img-top img-fluid" alt="Casa 7">
+                            <img src="/assets/casa7.png" class="card-img-top img-fluid" alt="Casa 7">
                             <div class="card-body">
                                 <h5 class="card-title">Mesa charme </h5>
                                 <p class="card-text">R$ 422,00</p>
@@ -351,7 +343,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="81" data-tipo="casa"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa8.png" class="card-img-top img-fluid" alt="Casa 8">
+                            <img src="/assets/casa8.png" class="card-img-top img-fluid" alt="Casa 8">
                             <div class="card-body">
                                 <h5 class="card-title">Telha sustentável</h5>
                                 <p class="card-text">R$ 81,00</p>
@@ -366,7 +358,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="110" data-tipo="casa"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa9.jpg" class="card-img-top img-fluid" alt="Casa 9">
+                            <img src="/assets/casa9.jpg" class="card-img-top img-fluid" alt="Casa 9">
                             <div class="card-body">
                                 <h5 class="card-title">Suporte Jardim vertical</h5>
                                 <p class="card-text">R$ 110,00</p>
@@ -381,7 +373,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="132" data-tipo="acessorios"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/casa10.png" class="card-img-top img-fluid" alt="Casa 10">
+                            <img src="/assets/casa10.png" class="card-img-top img-fluid" alt="Casa 10">
                             <div class="card-body">
                                 <h5 class="card-title">Prateleira moderna</h5>
                                 <p class="card-text">R$ 132,00</p>
@@ -396,7 +388,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="25" data-tipo="acessorios"
                         data-marca="Marca E">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios6.png" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios6.png" class="card-img-top img-fluid"
                                 alt="Acessorio 6">
                             <div class="card-body">
                                 <h5 class="card-title">Brinco pompom - cor 1</h5>
@@ -412,7 +404,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="25" data-tipo="acessorios"
                         data-marca="Marca F">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios7.png" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios7.png" class="card-img-top img-fluid"
                                 alt="Acessorio 7">
                             <div class="card-body">
                                 <h5 class="card-title">Brinco pompom - cor 2</h5>
@@ -428,7 +420,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="32" data-tipo="acessorios"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios8.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios8.jpg" class="card-img-top img-fluid"
                                 alt="Acessorio 8">
                             <div class="card-body">
                                 <h5 class="card-title">Brinco Tucano</h5>
@@ -444,7 +436,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="21" data-tipo="acessorios"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios9.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios9.jpeg" class="card-img-top img-fluid"
                                 alt="Acessorio 9">
                             <div class="card-body">
                                 <h5 class="card-title">Brinco Ocean</h5>
@@ -460,7 +452,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="31" data-tipo="acessorios"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios10.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios10.jpg" class="card-img-top img-fluid"
                                 alt="Acessorio 10">
                             <div class="card-body">
                                 <h5 class="card-title">Brinco Love</h5>
@@ -476,7 +468,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="acessorios"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/acessorios11.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/acessorios11.jpeg" class="card-img-top img-fluid"
                                 alt="Acessorio 11">
                             <div class="card-body">
                                 <h5 class="card-title">Brinde vintage</h5>
@@ -492,7 +484,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="59" data-tipo="belezasaude"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude.jpg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde">
                             <div class="card-body">
                                 <h5 class="card-title">Loção Facial Vegana</h5>
@@ -508,7 +500,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="89" data-tipo="belezasaude"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude1.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude1.jpg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 1">
                             <div class="card-body">
                                 <h5 class="card-title">Kit Creme Vegan</h5>
@@ -524,7 +516,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="39" data-tipo="belezasaude"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude2.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude2.jpg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 2">
                             <div class="card-body">
                                 <h5 class="card-title">Esfoliante BioArt</h5>
@@ -540,7 +532,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="belezasaude"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude3.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude3.jpeg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 3">
                             <div class="card-body">
                                 <h5 class="card-title">Pó Translúcido Cacau</h5>
@@ -556,7 +548,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="24" data-tipo="belezasaude"
                         data-marca="Marca E">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude4.png" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude4.png" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 4">
                             <div class="card-body">
                                 <h5 class="card-title">Balm Hidratante Labial</h5>
@@ -572,7 +564,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="belezasaude"
                         data-marca="Marca F">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude5.png" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude5.png" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 5">
                             <div class="card-body">
                                 <h5 class="card-title">Pó Translúcido Banana</h5>
@@ -588,7 +580,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="56" data-tipo="belezasaude"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude6.jpeg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude6.jpeg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 6">
                             <div class="card-body">
                                 <h5 class="card-title">Creme Hidrante UseOrganico</h5>
@@ -604,7 +596,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="belezasaude"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/beleza_saude7.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/beleza_saude7.jpg" class="card-img-top img-fluid"
                                 alt="Beleza e saúde 7">
                             <div class="card-body">
                                 <h5 class="card-title">Esfoliante</h5>
@@ -620,7 +612,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde1.png" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde1.png" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 1">
                             <div class="card-body">
                                 <h5 class="card-title">Mouse</h5>
@@ -636,7 +628,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca D">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde2.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde2.jpg" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 2">
                             <div class="card-body">
                                 <h5 class="card-title">Mouse Gamer</h5>
@@ -652,7 +644,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca E">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde3.png" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde3.png" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 3">
                             <div class="card-body">
                                 <h5 class="card-title">MousePad</h5>
@@ -668,7 +660,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca F">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde4.png" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde4.png" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 4">
                             <div class="card-body">
                                 <h5 class="card-title">Mouse XX200</h5>
@@ -684,7 +676,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca A">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde5.png" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde5.png" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 5">
                             <div class="card-body">
                                 <h5 class="card-title">Suporte Notebook</h5>
@@ -700,7 +692,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca B">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde6.png" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde6.png" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 6">
                             <div class="card-body">
                                 <h5 class="card-title">MousePad com apoio</h5>
@@ -716,7 +708,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
                         data-marca="Marca C">
                         <div class="card">
-                            <img src="cp4_front_end/assets/tec_verde9.jpg" class="card-img-top img-fluid"
+                            <img src="/assets/tec_verde9.jpg" class="card-img-top img-fluid"
                                 alt="Tecnologia Verde 9">
                             <div class="card-body">
                                 <h5 class="card-title">Suporte Notebook</h5>
