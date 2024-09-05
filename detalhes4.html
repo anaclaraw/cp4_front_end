@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolsa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/detalhes.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">X</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Produtos</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="container">
+      <div class="row">
+        <!-- carrossel imagens produto -->
+        <div class="col-md-4">
+          <div id="product-carousel" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/bolsa_sust5.jpg" class="d-block w-100" alt="bolsa sustentavel">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/bolsa_sust3.jpeg" class="d-block w-100" alt="bolsa sustentavel">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/bolsa_sust2.png" class="d-block w-100" alt="bolsa sustentavel">
+              </div>
+            </div>
+            <!-- botões para controlar carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Descrição do produto+preço -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bolsa sustentavel</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">R$XXX,XX</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed consectetur
+                impedit blanditiis sint adipisci ipsum cumque, neque amet, dicta, laudantium dolor in quasi architecto
+                reprehenderit ea? Aliquid necessitatibus esse exercitationem illum, doloremque laudantium commodi,
+                tenetur corporis delectus neque molestias perferendis amet eligendi veritatis ipsa nobis repellat
+                voluptas quam, vel blanditiis et animi possimus.</p>
+              <!-- Botões de Adicionar ao carrinho + Comprar Agora -->
+              <button class="btn btn-secondary">Adicionar ao carrinho</button>
+              <button class="btn btn-primary">Comprar agora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card opções do produto -->
+      <div class="row">
+        <div class="col-sm">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h2 class="card-title">Opções de Produto</h2>
+              <div class="card-text">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">Cor</div>
+                    <div class="col">Preto,Bege,Branco</div>
+                    <div class="col">Material</div>
+                    <div class="col">Tecido,Couro</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Detalhes do produto -->
+        <div class="col-sm">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h2 class="card-title">Detalhes do produto</h2>
+              <div class="card-text">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col">Origem</div>
+                    <div class="col">Importado</div>
+                    <div class="col">Tipo de fecho</div>
+                    <div class="col">Ziper</div>
+                    <div class="col">Tamanho</div>
+                    <div class="col">Tamanho unico</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card Caracteristicas Sustentaveis -->
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Caracteristicas Sustentaveis</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Este produto possui características sustentáveis
+                reconhecidas por certificações confiáveis.</h6>
+              <p class="card-text">Feito com materiais reutilizados e biodegradaveis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Outros produtos -->
+      <h2>Os clientes que viram esse produto também viram</h2>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 19rem;">
+              <img src="../assets/beleza_saude7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Produto de Beleza</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">R$XX,XX</li>
+                <li class="list-group-item">Receba até sexta-feira, setembro 20</li>
+                <li class="list-group-item">Frete por R$XX,XX</li>
+              </ul>
+              <div class="card-body">
+                <button class="btn btn-secondary">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 19rem;">
+              <img src="../assets/beleza_saude5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Produto de Beleza</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">R$XX,XX</li>
+                <li class="list-group-item">Receba até sexta-feira, setembro 20</li>
+                <li class="list-group-item">Frete por R$XX,XX</li>
+              </ul>
+              <div class="card-body">
+                <button class="btn btn-secondary">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 19rem;">
+              <img src="../assets/beleza_saude6.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Produto de Beleza</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">R$XX,XX</li>
+                <li class="list-group-item">Receba até sexta-feira, setembro 20</li>
+                <li class="list-group-item">Frete por R$XX,XX</li>
+              </ul>
+              <div class="card-body">
+                <button class="btn btn-secondary">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+
+  <footer class="bg-azul-claro text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- Coluna 1: Sobre -->
+        <div class="col-md-4">
+          <h5>Sobre Nós</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ipsum et purus interdum.</p>
+        </div>
+
+        <!-- Coluna 2: Links rápidos -->
+        <div class="col-md-4">
+          <h5>Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Sobre</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Serviços</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Redes Sociais -->
+        <div class="col-md-4">
+          <h5>Contato</h5>
+          <ul class="list-unstyled ">
+            <li><a href="#" class="text-white text-decoration-none text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Sobre</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Serviços</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center py-3">
+        <p>&copy; 2024 CP4 - FRONT-END.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
