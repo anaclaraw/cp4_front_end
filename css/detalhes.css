@@ -1,0 +1,48 @@
+nav{
+    font-family: "Poppins", sans-serif;
+   
+}
+
+main{
+   background-color: #fdefc2;
+}
+
+.container{
+    padding: 20px;
+}
+
+.row{
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+/* cards */
+.card{
+    border-style: none;
+    background-color: #b7dead;
+    margin-top: 10px;
+}
+
+/* Outros produtos */
+h2{
+    padding-top: 20px;
+}
+
+/* cor botão carrinho*/
+.btn-secondary{
+    background-color: green;
+}
+
+.bg-azul-claro {
+    background-color: rgba(172, 206, 192, 1);
+}
+
+.bg-azul-medio {
+    background-color: rgba(97, 166, 171, 1);
+}
+
+footer{
+    border-top: 2px rgba(0, 0, 0, 0.185) solid;
+}
+
+
