@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>Aula 19 - Bootstrap</title>
+  <style>
+    .col {
+      background-color: blanchedalmond;
+      border: 1px solid rgb(116, 110, 110);
+    }
+
+    .col-6 {
+      background-color: blanchedalmond;
+      border: 1px solid rgb(116, 110, 110);
+    }
+  </style>
+</head>
+
+<body>
+        
+              <h1 class="bg-marrom m-0 text-center text-light">  YAMG      </h1>
+  <nav class="navbar navbar-expand-lg bg-marrom sticky-top" data-bs-theme="dark">
+   
+    <div class="container-fluid ml-2 ">
+      
+      
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categorias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Beleza</a></li>
+              <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+              <li><a class="dropdown-item" href="#">Casa</a></li>
+              <li><a class="dropdown-item" href="#">Acessórios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/capa_beleza.png" class="d-block w-100" id="img_carousel1" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/capa_casa.png" class="d-block w-100" id="img_carousel2" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/capa_acessorios.png" class="d-block w-100" id="img_carousel3" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/capa_tech.png" class="d-block w-100" id="img_carousel4" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class=" bg-white text-center p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-3">
+                <div class=" mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <h3>Consumo Responsavel</h3>
+                    <p class="lead mb-0">creditamos que cada escolha de compra pode ter um impacto positivo no nosso planeta. O consumo responsável vai além da simples compra de produtos; trata-se de fazer escolhas conscientes que respeitem o meio ambiente e promovam a sustentabilidade. Ao escolher produtos que priorizam práticas éticas e recursos renováveis, você está contribuindo para um futuro mais verde e equilibrado. Juntos, podemos fazer a diferença, optando por produtos que não apenas atendem às nossas necessidades, mas também ajudam a preservar o planeta para as gerações futuras.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 p-3">
+                <div class=" mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <h3>Ação sustentável </h3>
+                    <p class="lead mb-0">buscamos oferecer produtos que seguem princípios de sustentabilidade e inovação. Nossas ações sustentáveis incluem a seleção de fornecedores que adotam práticas ecológicas, a utilização de materiais recicláveis e a minimização de resíduos. Além disso, incentivamos nossos clientes a reduzir, reutilizar e reciclar, promovendo uma cultura de responsabilidade ambiental. Cada produto em nossa loja reflete o nosso compromisso com um futuro mais sustentável, e convidamos você a se juntar a nós nessa jornada para fazer a diferença.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+ <section class="bg-light py-5 justify-content-center font-poppins">
+  <div class="container px-5 ">
+      <div class="row gx-5 ">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Beleza & Sustentabilidade</span></h2>
+                  <p class="lead fw-light ">Descubra nossa linha de produtos de beleza que alia sustentabilidade e cuidado com o meio ambiente. </p>
+                  <p class="text-muted"> Feitos com ingredientes orgânicos de alta qualidade, nossos produtos são livres de químicos nocivos e respeitam a natureza em cada etapa de produção. Escolha um cuidado pessoal que reflete o compromisso com a saúde da sua pele e do planeta. Beleza consciente, para um futuro mais verde.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-1">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/beleza_saude.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body text-center text-center">
+            <h5 class="card-title">Loção Facial</h5>
+            <p class="card-text">Suave, absorvente e eco-responsável.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/beleza_saude4.png" class="card-img-top" alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hidratantes</h5>
+            <p class="card-text">Ingredientes puros, sem química agressiva.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/beleza_saude5.png" class="card-img-top" alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Esfoliantes</h5>
+            <p class="card-text">Hidratação natural, fórmula eco-friendly.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/beleza_saude6.jpeg" class="card-img-top" alt="Image 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Serúns</h5>
+            <p class="card-text">Aroma suave, sem toxinas, eco-amigável.
+            </p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-dark">Ver mais</button>
+  </div>
+</section>
+
+
+<section class="bg-bege-claro py-5">
+  <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Aconchego & Sustentabilidade</span></h2>
+                  <p class="lead fw-light ">Transforme seu lar com itens de decoração que combinam estilo e sustentabilidade. </p>
+                  <p class="text-muted"> Nossos produtos são feitos com materiais eco-friendly, reutilizados e de origem responsável, garantindo um design que não apenas embeleza seu espaço, mas também respeita o meio ambiente. Escolha uma decoração que reflete o seu compromisso com um estilo de vida consciente e uma casa mais acolhedora e sustentável.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container ">
+    <div class="row g-1">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/casa1.jpeg" class="card-img-top" alt="Image 1">
+          <div class="card-body text-center text-center">
+            <h5 class="card-title">Lustres</h5>
+            <p class="card-text">Estilo rústico, elegante e ecológico</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/casa2.jpeg" class="card-img-top" alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vasos</h5>
+            <p class="card-text"> Versátil, feita à mão com materiais naturais.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/casa3.jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Enfeites</h5>
+            <p class="card-text">Sustentável, biodegradável e eficiente.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/casa4.jpg" class="card-img-top" alt="Image 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vaso</h5>
+            <p class="card-text">Natural e durável, ideal para decoração.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-azul-claro py-5 font-poppins">
+  <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Estilo & Sustentabilidade</span></h2>
+                  <p class="lead fw-light ">Complete seu visual com acessórios que fazem a diferença para o planeta. </p>
+                  <p class="text-muted">Nossas bolsas, brincos e cintos são feitos a partir de materiais sustentáveis e processos de produção éticos, unindo estilo e responsabilidade ambiental. Cada peça é cuidadosamente criada para refletir um compromisso com a moda consciente, sem abrir mão da elegância e da durabilidade. Escolha acessórios que contam uma história de respeito ao meio ambiente e ao trabalho artesanal.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container ">
+    <div class="row g-1">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/bolsa_sust2.png" class="card-img-top" alt="Image 1">
+          <div class="card-body text-center text-center">
+            <h5 class="card-title">Bolsas</h5>
+            <p class="card-text">Conforto e estilo com impacto reduzido</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/acessorios8.jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Brincos</h5>
+            <p class="card-text"> Conforto e estilo com baixo impacto</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/bolsa_sust7.jpeg" class="card-img-top" alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Bolsas</h5>
+            <p class="card-text">legante, durável e feito com materiais naturais</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/acessorios9.jpeg" class="card-img-top" alt="Image 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Colares</h5>
+            <p class="card-text">Estilo e conforto com impacto reduzido</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-bege-medio py-5 font-poppins">
+  <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-xxl-8">
+              <div class="text-center my-5">
+                  <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline ">Conexão & Sustentabilidade</span></h2>
+                  <p class="lead fw-light ">Elevando sua experiência digital com consciência ambiental</p>
+                  <p class="text-muted">  Cada componente é cuidadosamente desenvolvido para oferecer desempenho e durabilidade, sem comprometer o respeito ao meio ambiente. Escolha tecnologia que não apenas melhora seu dia a dia, mas também contribui para um futuro mais sustentável.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container ">
+    <div class="row g-1">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="/assets/tec_verde2.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body text-center text-center">
+            <h5 class="card-title">Mouse</h5>
+            <p class="card-text">Feito completamente com plástico reciclado.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/tec_verde3.png" class="card-img-top" alt="Image 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Sustentável, biodegradável e eficiente.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/tec_verde5.png" class="card-img-top" alt="Image 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mousepad</h5>
+            <p class="card-text">Versátil e eco-responsável, ótima aderência.</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <article class="card">
+          <img src="assets/tec_verde6.png" class="card-img-top" alt="Image 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mousepad</h5>
+            <p class="card-text">Design criativo com material reciclado</p>
+            <a href="#" class="btn bg-light">Go somewhere</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <footer class="bg-marrom text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- Coluna 1: Sobre -->
+        <div class="col-md-5 text-center">
+          <h5>Sobre Nós <i class="bi bi-tree-fill"></i></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ipsum et purus interdum.</p>
+        </div>
+  
+        <!-- Coluna 2: Links rápidos -->
+        <div class="col-md-3">
+          <h5>Páginas</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Categorias</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+  
+        <!-- Coluna 3: Redes Sociais -->
+        <div class="col-md-4">
+          <h5>Nossas Redes</h5>
+          <ul class="list-unstyled d-flex">
+            <li class="me-3">
+              <a href="https://www.facebook.com/" class="text-white text-decoration-none" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://twitter.com/" class="text-white text-decoration-none" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://www.instagram.com/" class="text-white text-decoration-none" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white text-decoration-none" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="text-center py-3">
+        <p>&copy; 2024 CP4 - FRONT-END.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+<script src="/js/index.js"></script>
+</html>
