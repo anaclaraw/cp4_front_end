@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria de Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="cp4_front_end/css/categorias.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">X</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">-----</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">----</a></li>
+                                <li><a class="dropdown-item" href="#">----</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">----</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- Sidebar Filtros -->
+            <div class="col-lg-3 col-md-4 mb-4">
+                <h5>Filtros</h5>
+                <!-- Filtrar por Preço -->
+                <div class="mb-4">
+                    <h6>Preço</h6>
+                    <div>
+                        <input type="checkbox" class="filter-price" id="preco1" value="50">
+                        <label for="preco1">Até R$50</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-price" id="preco2" value="100">
+                        <label for="preco2">R$50 - R$100</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-price" id="preco3" value="101">
+                        <label for="preco3">Acima de R$100</label>
+                    </div>
+                </div>
+
+                <!-- Filtrar por Tipo de Produto -->
+                <div class="mb-4">
+                    <h6>Tipo de Produto</h6>
+                    <div>
+                        <input type="checkbox" class="filter-type" id="tipo1" value="acessorios">
+                        <label for="tipo1">Acessórios</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-type" id="tipo2" value="belezasaude">
+                        <label for="tipo2">Beleza e saúde</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-type" id="tipo3" value="bolsas">
+                        <label for="tipo4">Bolsas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-type" id="tipo3" value="casa">
+                        <label for="tipo5">Casa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-type" id="tipo3" value="tecverde">
+                        <label for="tipo6">Tecnologia Verde</label>
+                    </div>
+                </div>
+
+                <!-- Filtrar por Marca -->
+                <div class="mb-4">
+                    <h6>Marca</h6>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca1" value="Marca A">
+                        <label for="marca1">Marca A</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca2" value="Marca B">
+                        <label for="marca2">Marca B</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca3" value="Marca C">
+                        <label for="marca3">Marca C</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca3" value="Marca D">
+                        <label for="marca4">Marca D</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca3" value="Marca E">
+                        <label for="marca5">Marca E</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="filter-brand" id="marca3" value="Marca F">
+                        <label for="marca6">Marca F</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="applyFilters()">Aplicar Filtros</button>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- bolsa1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="50" data-tipo="bolsas"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="./cp4_front_end/assets/bolsa_sust1.jpg" class="card-img-top img-fluid"
+                                alt="Bolsa 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa NatureNest</h5>
+                                <p class="card-text">R$ 50,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="75" data-tipo="bolsas"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust2.png" class="card-img-top img-fluid"
+                                alt="Bolsa 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa EcoFabulous</h5>
+                                <p class="card-text">R$ 75,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="82" data-tipo="bolsas"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust3.jpeg" class="card-img-top img-fluid"
+                                alt="Bolsa 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa EcoTrend</h5>
+                                <p class="card-text">R$ 82,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="296" data-tipo="bolsas"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust4.jpg" class="card-img-top img-fluid"
+                                alt="Bolsa 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa TerraTote</h5>
+                                <p class="card-text">R$ 296,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="185" data-tipo="bolsas"
+                        data-marca="Marca E">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust5.jpg" class="card-img-top img-fluid"
+                                alt="Bolsa 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa EcoAura</h5>
+                                <p class="card-text">R$ 185,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="178" data-tipo="bolsas"
+                        data-marca="Marca F">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust6.jpeg" class="card-img-top img-fluid"
+                                alt="Bolsa 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa PurePath</h5>
+                                <p class="card-text">R$ 178,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bolsa7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="76" data-tipo="bolsas"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/bolsa_sust7.jpeg" class="card-img-top img-fluid"
+                                alt="Bolsa 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa GreenGrace</h5>
+                                <p class="card-text">R$ 76,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="124" data-tipo="casa"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa1.jpeg" class="card-img-top img-fluid" alt="Casa 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lustre harmonia</h5>
+                                <p class="card-text">R$ 124,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="49" data-tipo="casa"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa2.jpeg" class="card-img-top img-fluid" alt="Casa 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Vaso tesouro tranquilo</h5>
+                                <p class="card-text">R$ 49,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="234" data-tipo="casa"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa3.jpg" class="card-img-top img-fluid" alt="Casa 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Trio de vasos</h5>
+                                <p class="card-text">R$ 234,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="68" data-tipo="casa"
+                        data-marca="Marca E">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa4.jpg" class="card-img-top img-fluid" alt="Casa 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Vaso zen</h5>
+                                <p class="card-text">R$ 68,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="358" data-tipo="casa"
+                        data-marca="Marca F">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa5.png" class="card-img-top img-fluid" alt="Casa 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa madeira aconchegante</h5>
+                                <p class="card-text">R$ 358,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="422" data-tipo="casa"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa7.png" class="card-img-top img-fluid" alt="Casa 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Mesa charme </h5>
+                                <p class="card-text">R$ 422,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="81" data-tipo="casa"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa8.png" class="card-img-top img-fluid" alt="Casa 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Telha sustentável</h5>
+                                <p class="card-text">R$ 81,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa9 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="110" data-tipo="casa"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa9.jpg" class="card-img-top img-fluid" alt="Casa 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Suporte Jardim vertical</h5>
+                                <p class="card-text">R$ 110,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- casa10 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="132" data-tipo="acessorios"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/casa10.png" class="card-img-top img-fluid" alt="Casa 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Prateleira moderna</h5>
+                                <p class="card-text">R$ 132,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="25" data-tipo="acessorios"
+                        data-marca="Marca E">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios6.png" class="card-img-top img-fluid"
+                                alt="Acessorio 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinco pompom - cor 1</h5>
+                                <p class="card-text">R$ 25,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="25" data-tipo="acessorios"
+                        data-marca="Marca F">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios7.png" class="card-img-top img-fluid"
+                                alt="Acessorio 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinco pompom - cor 2</h5>
+                                <p class="card-text">R$ 25,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio8 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="32" data-tipo="acessorios"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios8.jpg" class="card-img-top img-fluid"
+                                alt="Acessorio 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinco Tucano</h5>
+                                <p class="card-text">R$ 32,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio9 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="21" data-tipo="acessorios"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios9.jpeg" class="card-img-top img-fluid"
+                                alt="Acessorio 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinco Ocean</h5>
+                                <p class="card-text">R$ 21,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio10 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="31" data-tipo="acessorios"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios10.jpg" class="card-img-top img-fluid"
+                                alt="Acessorio 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinco Love</h5>
+                                <p class="card-text">R$ 31,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- acessorio11 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="acessorios"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/acessorios11.jpeg" class="card-img-top img-fluid"
+                                alt="Acessorio 11">
+                            <div class="card-body">
+                                <h5 class="card-title">Brinde vintage</h5>
+                                <p class="card-text">R$ 19,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="59" data-tipo="belezasaude"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude.jpg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde">
+                            <div class="card-body">
+                                <h5 class="card-title">Loção Facial Vegana</h5>
+                                <p class="card-text">R$ 59,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="89" data-tipo="belezasaude"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude1.jpg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Kit Creme Vegan</h5>
+                                <p class="card-text">R$ 89,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="39" data-tipo="belezasaude"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude2.jpg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante BioArt</h5>
+                                <p class="card-text">R$ 39,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="belezasaude"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude3.jpeg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Pó Translúcido Cacau</h5>
+                                <p class="card-text">R$ 19,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="24" data-tipo="belezasaude"
+                        data-marca="Marca E">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude4.png" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Balm Hidratante Labial</h5>
+                                <p class="card-text">R$ 24,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="19" data-tipo="belezasaude"
+                        data-marca="Marca F">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude5.png" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Pó Translúcido Banana</h5>
+                                <p class="card-text">R$ 19,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="56" data-tipo="belezasaude"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude6.jpeg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Creme Hidrante UseOrganico</h5>
+                                <p class="card-text">R$ 56,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- belezasaude7 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="belezasaude"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/beleza_saude7.jpg" class="card-img-top img-fluid"
+                                alt="Beleza e saúde 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde1.png" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde2 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca D">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde2.jpg" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca E">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde3.png" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca F">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde4.png" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde5 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca A">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde5.png" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde6 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca B">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde6.png" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tecverde9 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 product" data-preco="38" data-tipo="tecverde"
+                        data-marca="Marca C">
+                        <div class="card">
+                            <img src="cp4_front_end/assets/tec_verde9.jpg" class="card-img-top img-fluid"
+                                alt="Tecnologia Verde 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Esfoliante</h5>
+                                <p class="card-text">R$ 38,00</p>
+                                <a href="#" class="btn btn-custom">
+                                    <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-azul-claro text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: Sobre -->
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at ipsum et purus interdum.</p>
+                </div>
+
+                <!-- Coluna 2: Links rápidos -->
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Serviços</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Redes Sociais -->
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#" class="text-white text-decoration-none text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Serviços</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>&copy; 2024 CP4 - FRONT-END.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
