@@ -1,3 +1,7 @@
+* {
+    font-family: "Poppins", sans-serif; 
+}
+
 .container {
     max-width: 600px; 
     margin-top: 100px; 
@@ -36,6 +40,7 @@ textarea.form-control:focus {
 }
 
 .botao {
+    margin-bottom: 30px;
     background-color: #538089; 
     border-radius: 10px; 
     border: none;
@@ -49,4 +54,16 @@ textarea.form-control:focus {
 
 form .form-group {
     margin-bottom: 1.5rem; 
+}
+
+
+.bg-azul-claro {
+    background-color: rgba(172, 206, 192, 1);
+}
+.bg-azul-medio {
+    background-color: rgba(97, 166, 171, 1);
+}
+
+footer {
+    border-top: 2px rgba(0, 0, 0, 0.185) solid;
 }
