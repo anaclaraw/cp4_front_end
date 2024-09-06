@@ -1,5 +1,5 @@
 const CarouselImgList = ['img_carousel1','img_carousel2','img_carousel3','img_carousel4']
-const PathImgMobile = ['assets/capa_beleza.png','assets/capa_casa.png','assets/capa_acessorios.png','assets/capa_tech.png']
+const PathImgMobile = ['assets/capa_beleza_mobile.png','assets/capa_casa_mobile.png','assets/capa_acessorios_mobile.png','assets/capa_tech_mobile.png']
 const PathImgDesktop = ['assets/capa_beleza_desktop.png','assets/capa_casa_desktop.png','assets/capa_acessorios_desktop.png','assets/capa_tech_desktop.png']
 
 
